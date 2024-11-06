@@ -10,7 +10,9 @@ function getDetailChampions(id){
 };
 
 
+
 export default {
   getAllChampions,
-  getDetailChampions
+  getDetailChampions,
+
 }

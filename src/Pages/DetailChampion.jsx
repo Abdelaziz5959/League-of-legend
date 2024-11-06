@@ -15,7 +15,7 @@ const DetailChampion = () => {
         try {
             const response = await ChampionService.getDetailChampions(id);
             setChampion(response.data.data[id]);
-            console.log(response.data.data[id]);
+            // console.log(response.data.data[id]);
             
 
         } catch (error) {
@@ -32,7 +32,7 @@ const DetailChampion = () => {
         navigate("/champion/" + id)
     }
 
-    return <> <Container className="d-flex flex-column align-items-center">
+    return <Container className="d-flex flex-column align-items-center">
         
         <h1>Champion {id}</h1>
         <div className="d-flex justify-content-center flex-wrap gap-3">
@@ -89,7 +89,7 @@ const DetailChampion = () => {
         </Container>;
     
       
-    </>;
+  
 }
 
 export default DetailChampion;

@@ -10,11 +10,13 @@ const NavBar = () => {
     return <>
         <Navbar expand="lg" className="bg-body-tertiary">
             <Container>
-                <Navbar.Brand><Link to={"/"}>Home</Link></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto gap-3">
-                        <Nav.Link href="#link">Link</Nav.Link>
+                    <Navbar.Brand><Link to={"/"}>Home</Link></Navbar.Brand>
+                    {/* <Navbar.Brand><Link to={"/champion/:id"}>Champion</Link></Navbar.Brand> */}
+                    <Navbar.Brand><Link to={"/item/"}>Item</Link></Navbar.Brand>
+                        
 
                     </Nav>
                 </Navbar.Collapse>
